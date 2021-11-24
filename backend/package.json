@@ -1,0 +1,27 @@
+{
+  "name": "sqleditor",
+  "version": "1.0.0",
+  "description": "execute sql commands with express and react",
+  "main": "server.js",
+  "dependencies": {
+    "express": "4.17.1",
+    "mysql": "2.18.1",
+    "cors": "2.8.5"
+  },
+  "workspaces": [
+    "../frontend/"
+  ],
+  "scripts": {
+    "postinstall": "cd node_modules/frontend && npm install",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "React",
+    "express.js",
+    "MySQL",
+    "API"
+  ],
+  "author": "Aiswarya",
+  "license": "ISC"
+}
